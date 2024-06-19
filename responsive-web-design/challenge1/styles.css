@@ -68,7 +68,8 @@ svg {
     background-color: #1b1b32cc;
     padding: 2rem 2rem;
     border-radius: .5rem;
-    max-width: 90vw;
+    width: 80vw;
+    max-width: 600px;
     margin: 0px auto;
 
     hr {
@@ -105,5 +106,10 @@ svg {
         padding: .5rem 1rem;
         font-size: 1rem;
         cursor: pointer;
+    }
+
+    input[type="radio"],
+    input[type="checkbox"] {
+        margin-left: .5rem;
     }
 }

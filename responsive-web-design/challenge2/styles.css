@@ -1,0 +1,108 @@
+/* CSS Reset Inicio */
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100dvh;
+}
+
+input,
+button {
+    font: inherit;
+}
+
+p {
+    text-wrap: pretty;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    text-wrap: balance;
+}
+
+img,
+video,
+svg {
+    height: auto;
+    max-width: 100%;
+}
+
+@media (prefers-reduced-motion: reduce) {
+
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+        transition: none;
+    }
+}
+
+/* CSS Reset Fin */
+
+#title,
+#subtitle {
+    text-align: center;
+    margin: .5rem auto;
+}
+
+#main {
+    max-width: 1200px;
+    width: 90%;
+    margin: 0 auto;
+    background-color: #eee;
+    padding: 1rem;
+
+    #img-div {
+        text-align: center;
+
+        #image {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        #img-caption {
+            margin-top: .5rem;
+            text-align: center;
+        }
+    }
+
+    #tribute-info {
+        max-width: 550px;
+        margin: 0 auto;
+
+        h3 {
+            text-align: center;
+        }
+
+        ul {
+            margin-left: 1rem;
+            line-height: 1.6rem;
+
+            li {
+                margin-bottom: 1rem;
+                color: #333;
+            }
+        }
+
+        i {
+            text-align: center;
+        }
+    }
+}
