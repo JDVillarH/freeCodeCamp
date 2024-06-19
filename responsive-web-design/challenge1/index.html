@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario - freeCodeCamp</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <h1 id="title">Cualquier titulo de prueba</h1>
+    <p id="description">Probando las descripciones</p>
+    <form id="survey-form">
+        <label id="name-label">Ingresa tu nombre:</label>
+        <input required id="name" type="text" placeholder="Enter your name">
+        <br>
+
+        <label id="email-label">Ingresa tu correo:</label>
+        <input id="email" type="email" required placeholder="Enter your email">
+        <br>
+
+        <label id="number-label">Ingresa tu número:</label>
+        <input id="number" min="0" max="15" type="number" placeholder="Enter your number">
+        <br>
+
+        <label for="dropdown">Elemento select</label>
+        <select id="dropdown">
+            <option>Si</option>
+            <option>No</option>
+        </select>
+        <br>
+
+        <hr>
+
+        <p>Selección de radios</p>
+        <label> Radio #1<input type="radio" name="radio" value="1"> </label>
+        <label> Radio #2<input type="radio" name="radio" value="2"> </label>
+        <br>
+
+        <hr>
+
+        <p>Selección de checkbox</p>
+        <label> Checkbox #1<input type="checkbox" value="1"></label>
+        <label> Checkbox #2<input type="checkbox" value="2"></label>
+        <label> Checkbox #3<input type="checkbox" value="3"></label>
+        <label> Checkbox #4<input type="checkbox" value="4"></label>
+        <label> Checkbox #5<input type="checkbox" value="5"></label>
+
+        <br>
+
+        <textarea></textarea>
+
+        <br>
+
+        <input id="submit" type="submit" value="Go!">
+
+    </form>
+</body>
+
+</html>
