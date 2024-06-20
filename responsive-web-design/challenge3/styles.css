@@ -1,0 +1,129 @@
+/* CSS Reset Inicio */
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100dvh;
+}
+
+input,
+button {
+    font: inherit;
+}
+
+p {
+    text-wrap: pretty;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    text-wrap: balance;
+}
+
+img,
+video,
+svg {
+    height: auto;
+    max-width: 100%;
+}
+
+@media (prefers-reduced-motion: reduce) {
+
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+        transition: none;
+    }
+}
+
+/* CSS Reset Fin */
+
+body {
+    #navbar {
+        position: fixed;
+        border-right: 2px solid #e0e0e0;
+        width: 310px;
+        height: 100%;
+
+        header,
+        #links a {
+            padding: 1rem;
+        }
+
+        #links {
+            display: flex;
+            flex-direction: column;
+
+            a {
+                border-top: 2px solid #e0e0e0;
+                text-decoration: none;
+                color: #4d4e53;
+            }
+        }
+    }
+
+    #main-doc {
+        padding: 2rem;
+        margin-left: 310px;
+
+        header {
+            font-weight: bold;
+            font-size: 1.5rem;
+        }
+
+        p {
+            margin-left: 1rem;
+        }
+
+        ul {
+            margin-left: 2rem;
+
+            li {
+                margin: 15px 0px 0px 20px
+            }
+        }
+
+        code {
+            display: block;
+            line-height: 2;
+            background-color: #f7f7f7;
+            padding: 15px;
+            margin: 10px;
+            border-radius: 5px;
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    body {
+        #navbar {
+            width: 100%;
+            height: auto;
+            position: static;
+            border-right: none;
+        }
+
+        #main-doc {
+            margin-left: 0;
+        }
+    }
+
+}
